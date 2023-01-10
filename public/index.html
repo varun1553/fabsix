@@ -19,7 +19,6 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
@@ -38,10 +37,8 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
@@ -49,8 +46,7 @@
 
     <!-- header -->
     <div class="navbar navbar-dark bg-dark " style="padding-left: 15%; padding-right: 15%;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-t2nIBkxAsyzomASbNd_PcoRlqTsZKKjzQ&usqp=CAU"
-            alt="" width="50px">
+        
         <h3 class="text-light text-center"> The Fab Six
         </h3>
         <button data-bs-toggle="collapse" data-bs-target="#nv" class="navbar-toggler ms-auto border-light ">
@@ -98,15 +94,21 @@
                         <div class="card-body text-light bg-dark">
                             <h3>MICROSOFT</h3>
                             <p>MSFT</p>
+                            
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                        style="background-color: rgb(112, 221, 240);color: white;">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary "
-                                        style="background-color: rgb(192, 76, 134); color: white;">Edit</button>
+                                        style="background-color: rgb(112, 221, 240);color: white;">View for entire data</button>
+                                  
                                 </div>
                                 <!-- <p><strong>Time:</strong> 9 mins</p> -->
                             </div>
+                            <p>From: </p> <input type="date" id="datem1">
+                            <p>TO: </p><input type="date" id="datem2">
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        style="background-color: rgb(51,153,51);color: white;"><p>View for custom date</p></button>
                         </div>
                     </div>
                 </div>
@@ -118,15 +120,22 @@
                         <div class="card-body text-light bg-dark">
                             <h3>Pfizer</h3>
                             <p>PFE</p>
+                            
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                        style="background-color: rgb(112, 221, 240);color: white;">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary "
-                                        style="background-color: rgb(192, 76, 134); color: white;">Edit</button>
+                                        style="background-color: rgb(112, 221, 240);color: white;">View for entire data</button>
+                                   
                                 </div>
+
                                 <!-- <p><strong>Time:</strong> 10 mins</p> -->
                             </div>
+                            <p>From: </p> <input type="date" id="datep1">
+                            <p>TO: </p><input type="date" id="datep2">
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        style="background-color: rgb(51,153,51);color: white;"><p>View for custom date</p></button>
                         </div>
                     </div>
                 </div>
@@ -138,15 +147,21 @@
                         <div class="card-body text-light bg-dark">
                             <h3>Exxon Mobil Corporation</h3>
                             <p>XOM</p>
+                
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                        style="background-color: rgb(112, 221, 240);color: white;">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary "
-                                        style="background-color: rgb(192, 76, 134); color: white;">Edit</button>
+                                        style="background-color: rgb(112, 221, 240);color: white;">View for entired data</button>
+                                   
                                 </div>
                                 <!-- <p><strong>Time:</strong> 11 mins</p> -->
                             </div>
+                            <p>From: </p> <input type="date" id="datex1">
+                            <p>TO: </p><input type="date" id="datex2">
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        style="background-color: rgb(51,153,51);color: white;"><p>View for custom date</p></button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +174,6 @@
         <div class="row">
             <!-- <div class="col-sm-8 text-left" style="padding-left:20%;">
                 <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-
                 <p>New to Bootstrap? Visit the homepage or read our getting started guide.</p>
             </div> -->
             <div class="col-sm-4 text-right" style="padding-left: 5%;">
@@ -167,9 +181,7 @@
             </div>
         </div>
     </div>
-    <marquee direction="right">Thank you and visit again</marquee>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   </body>
 </html>
-
