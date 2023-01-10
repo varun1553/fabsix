@@ -45,6 +45,25 @@
 
 
     <!-- header -->
+
+    <script>
+    const options = {
+      method: 'GET',
+      headers: {
+          'X-RapidAPI-Key': '184f13f6c3msh81ae48e298919a3p16bc7ejsna4a53e091038',
+          'X-RapidAPI-Host': 'yh-finance.p.rapidapi.com'
+      }
+    };
+  
+    fetch('https://yh-finance.p.rapidapi.com/stock/v3/get-historical-data?symbol=AMRN&region=US', options)
+      .then(response => response.json())
+      .then(response => {
+              console.log(response);
+              setdata(response['prices']);
+    })
+    .catch(err => console.log(err));
+    </script>
+    
     <div class="navbar navbar-dark bg-dark " style="padding-left: 15%; padding-right: 15%;">
         
         <h3 class="text-light text-center"> The Fab Six
@@ -75,11 +94,7 @@
 
     <!-- main -->
     <div style="padding-bottom:10%;" class="text-center">
-        <h1 class="text-center " style="margin-top: 150px; ">THE FAB SIX</h1>
-        <!-- <button class="text-center bg-info rounded" style="color: #065bf8;">Main call to action
-        </button>
-        <button class="text-center bg-secondary rounded" style="color:rgb(165, 165, 165);">Secondary Action
-        </button> -->
+        <h1 class="text-center " style="margin-top: 150px; ">Risk Measurement Dashboard</h1>
     </div>
 
     <!-- cards -->
