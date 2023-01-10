@@ -6,9 +6,7 @@ function XOM(){
 
     return (
         <>
-        <Card>
-             <Card.Body>Exxon Mobil</Card.Body>
-        </Card>
+        
         </>
 
     )

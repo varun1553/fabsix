@@ -6,9 +6,7 @@ function PFE(){
 
     return (
         <>
-        <Card>
-             <Card.Body>Pfizer</Card.Body>
-        </Card>
+        
         </>
 
     )
