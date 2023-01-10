@@ -1,10 +1,15 @@
 import './App.css';
+import MSFT from './components/MSFT';
+import XOM from './components/XOM';
+import PFE from './components/PFE';
 
 function App() {
   return (
     <div>
-      <p>Hello</p>
-      
+      <MSFT></MSFT>
+      <XOM></XOM>
+      <PFE></PFE>
+
     </div>
     
   );
